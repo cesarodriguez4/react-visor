@@ -1,5 +1,24 @@
-
 import React from 'react';
+
+var flickrLogo = require('../images/flickr-logo.png');
+
+var fLogoStyle = {
+  width: '5%',
+  float: 'right'
+}
+
+var headerStyle = {
+  width: '100%',
+  backgroundColor: '#0063dc',
+  padding: '1em',
+  color: 'white',
+  fontFamily: 'open sans',
+  fontSize: 'small',
+  fontWeight:'bold',
+  lineHeight: '5',
+  paddingLeft: '3%',
+  boxSizing: 'border-box'
+}
 
 class Header extends React.Component {
 
@@ -25,18 +44,11 @@ class Header extends React.Component {
   }
 
   render() {
-    var headerColor = {
-      width: '100%',
-      backgroundColor: '#4abf88',
-      padding: '1em',
-      color: 'white',
-      fontFamily: 'open sans',
-      fontSize: 'small',
-      fontWeight:'bold'
-    }
-
     return (
-      <header style={headerColor}> { this.state.date.toLocaleTimeString() }</header>
+      <header style={headerStyle}>
+        { this.state.date.toLocaleTimeString() }
+        <img style={fLogoStyle} src={flickrLogo}></img>
+      </header>
     );
   }
 }
