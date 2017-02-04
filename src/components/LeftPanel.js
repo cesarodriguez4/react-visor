@@ -20,20 +20,10 @@ var thumbStyle = {
 }
 
 class LeftPanel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.click = this.click.bind(this);
-  }
-
-  click(value) {
-    alert(value);
-  }
 
   images = this.props.src.map((photo)=>
-    <Thumb style={thumbStyle} key={photo.id} src={photo} />
+    <Thumb click={this.props.handleClick.bind(this, photo)} style={thumbStyle} key={photo.id} src={photo} />
   );
-
-
 
  render() {
   return (
