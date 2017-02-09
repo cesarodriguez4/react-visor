@@ -1,2 +1,4 @@
 # react-visor
-Get awesome wallpapers from flickr using ReacJS
+## Gallery build using React.    
+Soon:
+- Get awesome wallpapers from flickr APIRest using ReacJS

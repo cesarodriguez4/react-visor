@@ -10,9 +10,7 @@ var font = {
 }
 var panelStyle = {
   width: '25%',
-  backgroundColor: '#ff0084',
   boxSizing: 'border-box',
-  height: '100vh',
   float: 'left'
 }
 var thumbStyle = {
