@@ -11,7 +11,7 @@ let additionalPaths = [];
 
 module.exports = {
   additionalPaths: additionalPaths,
-  port: defaultSettings.port,
+  port: process.env.PORT || 8000,
   debug: true,
   devtool: 'eval',
   output: {
